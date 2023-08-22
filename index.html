@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- Importando o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="./stily.css">
+</head>
+<body>
+    <!-- Importando o kit de ícones Font Awesome -->
+    <script src="https://kit.fontawesome.com/be298698d9.js" crossorigin="anonymous"></script>
+    
+    <!-- Barra Lateral -->
+    <div class="sidebar">
+        <!-- Logotipo -->
+        <div class="logotipo">
+            <a href="#">
+                <img src="./img/logotipo.png" alt="logotipo"/>
+            </a>
+        </div>
+
+        <!-- Navegação - Seção 1 -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="fa fa-search"></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-book"></span>
+                        <span>Your Books</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Navegação - Seção 2 -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-plus-square"></span>
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="fa fas fa-heart"></span>
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Políticas -->
+        <div class="policies">
+            <ul>
+                <li>
+                    <a href="#">Cookies</a>
+                </li>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Conteúdo Principal -->
+    <div class="main-container">
+        <!-- Barra Superior -->
+        <div class="topbar">
+            <!-- Botões de Avanço e Retorno -->
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+
+            <!-- Navegação na Barra Superior -->
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Premium</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+
+                    <li class="divider">|</li>
+
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+                <!-- Botão de Login -->
+                <button type="button">Log In</button>
+            </div>
+        </div>
+
+        <!-- Playlists do Spotify -->
+        <div class="spotify-playlists">
+            <h2>Spotify Playlists</h2>
+            <!-- Lista de Playlists -->
+            <div class="list">
+                <!-- Item Individual da Lista de Playlists -->
+                <div class="item">
+                    <img src="img/playlist.png">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Today's Top Hits</h4>
+                    <p>Top singers of today</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/muscicacalma.jpg">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Today's Top Hits</h4>
+                    <p>Top singers of today</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/retro.jpg">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Today's Top Hits</h4>
+                    <p>Top singers of today</p>
+                </div>
+
+                <div class="item">
+                    <img src="img/eletronic.png">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Today's Top Hits</h4>
+                    <p>Top singers of today</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Visualização Prévia -->
+        <div class="preview">
+            <!-- Texto na Visualização Prévia -->
+            <div class="text">
+                <h6>Preview of Spotify</h6>
+                <p>Sign up for free and start enjoying.</p>
+            </div>
+            <!-- Botão na Visualização Prévia -->
+            <div class="button">
+                <button type="button">Sign up Free!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
