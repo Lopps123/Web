@@ -1,0 +1,302 @@
+/* Reset de margens e preenchimentos padrão */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos da barra lateral fixa */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000;
+    padding: 24px;
+}
+
+/* Estilos do logotipo na barra lateral */
+.sidebar .logotipo img{
+    width: 130px;
+}
+
+/* Estilos da navegação na barra lateral */
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.sidebar .navigation li {
+    padding: 10px 0px;
+}
+.sidebar .navigation li a {
+    color:  #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Efeito de hover nos links da navegação */
+.sidebar .navigation li a:hover,
+.sidebar .navigation li a:active,
+.sidebar .navigation li a:focus {
+   color: #ffffff; 
+}
+
+/* Ícones nos links da navegação */
+.sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Efeito de hover nos ícones */
+.sidebar .navigation li a:hover .fa:hover,
+.sidebar .navigation li a:active .fa:active,
+.sidebar .navigation li a:focus .fa:focus {
+   color: #ffffff; 
+}
+
+/* Estilos das políticas no rodapé da barra lateral */
+.sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+}
+
+.sidebar .policies ul {
+    list-style: none;
+}
+
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Efeito de hover nos links de políticas */
+.sidebar .policies li a:hover,
+.sidebar .policies li a:active,
+.sidebar .policies li a:focus {
+   text-decoration: underline; 
+}
+
+/* Estilos do contêiner principal */
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+
+/* Estilos da barra superior */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px; 
+}
+
+/* Estilos dos botões de navegação na barra superior */
+.topbar .prev-next-buttons button {
+    color: #717171;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+/* Estilos da barra de navegação */
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos dos itens de navegação */
+.topbar .navbar ul {
+    list-style: none;
+} 
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+/* Estilos dos links de navegação */
+.topbar .navbar ul li a{
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Efeito de hover nos links de navegação */
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+    color: #ffffff;
+    font-size: 15px;  
+}
+
+/* Estilos de divisores na barra de navegação */
+.topbar .navbar ul li.divider {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+}
+
+/* Estilos dos botões na barra de navegação */
+.topbar .navbar button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Efeito de hover nos botões da barra de navegação */
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+    background-color: #f2f2f2;
+}
+
+/* Estilos das playlists do Spotify */
+.spotify-playlists {
+    padding: 20px 40px;
+}
+
+/* Estilos do título das playlists */
+.spotify-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Estilos da lista de playlists */
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* Estilos dos itens individuais na lista de playlists */
+.spotify-playlists .list .item {
+    min-width: 100px;
+    width: 250px;
+    padding: 50px;
+    background-color: #181818;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+/* Efeito de hover nos itens da lista de playlists */
+.spotify-playlists .list .item:hover{
+    background-color: #252525;
+}
+
+/* Estilos das imagens nos itens da lista de playlists */
+.spotify-playlists .list .item img {
+    width: 100%;
+    border-radius: 100px;
+    margin-bottom: 200px;
+} 
+
+/* Estilos do botão de reprodução nas imagens */
+.spotify-playlists .list .item .play {
+    position: relative;
+}
+
+/* Estilos do ícone de reprodução nas imagens */
+.spotify-playlists .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 25px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+/* Efeito de hover no ícone de reprodução */
+.spotify-playlists .list .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/* Estilos do título das playlists */
+.spotify-playlists .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilos do texto abaixo das imagens nas playlists */
+.spotify-playlists .list .item .play p {
+    color:  #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+/* Estilos da visualização prévia */
+.preview {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos do cabeçalho da visualização prévia */
+.preview .h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px;
+}
+
+/* Estilos do texto na visualização prévia */
+.preview p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Estilos do botão na visualização prévia */
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
